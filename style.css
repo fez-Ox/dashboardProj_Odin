@@ -19,7 +19,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-rows: 1fr 4.5fr;
 }
 
 .sidebar {
@@ -27,7 +27,7 @@ body {
     grid-row: 1 / 3;
     background-color: ghostwhite;
     padding: 20px;
-    margin-bottom: 250px;
+    padding-bottom: 250px;
     display: grid;
     grid-template-rows: 1fr repeat(9, 0.6fr);
 }
@@ -73,25 +73,34 @@ body {
     grid-row: 2 / 3;
     background-color: darkgrey;
     display: grid;
-    grid-template-columns: 3.5fr 1fr;
-    grid-template-rows: 3fr 2fr;
-    gap: 15px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2.1fr 2fr;
+    gap: 20px;
     padding: 2em 2em 4em 1.8em;
 }
 
-.main-content .project-container {
+.main-content .projects-container {
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .main-content .announcement-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .main-content .trending-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .content-sec-heading {
@@ -104,18 +113,21 @@ body {
     grid-row: 1 / 2;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.searchbar-icon {
-    height: 1em;
+#searchbar-input {
+    width: 100%;
+    border-radius: 14px;
+    height: 28px;
 }
 
 .searchbar-form {
-    flex: 1 1 90%;
+    flex-grow: 1;
 }
 
-#searchar-input {
-    width: 100%;
+.searchbar-icon {
+    height: 2em;
 }
 
 .rightend-stuff {
@@ -124,15 +136,27 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.searchbar-icon {
-    height: 1em;
+    justify-content: center;
 }
 
 .introinfo-div {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.intro-labels {
+    margin-left: 10px;
+}
+
+.intro-name-text {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.intro-img {
+    height: 5.5em;
 }
 
 .rightend-btns {
@@ -140,6 +164,7 @@ body {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
 .rightendbtn-div {
@@ -154,4 +179,47 @@ body {
     padding: 4px 30px;
     font-size: 16px;
     font-weight: 500;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    flex: 1 1 100%;
+}
+
+.project-card {
+    background-color: whitesmoke;
+    border: 0.5px solid white;
+    border-radius: 6px;
+
+}
+
+.announcement-div {
+    flex: 1 1 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 0.5px solid white;
+    border-radius: 6px;
+}
+
+.announcement-card {
+    flex: 1 1 100%;
+}
+
+.trending-div {
+    flex: 1 1 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border: 0.5px solid white;
+    border-radius: 6px;
+}
+
+.trending-card {
+    flex: 1 1 100%;
 }
