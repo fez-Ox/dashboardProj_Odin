@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <img
+          src="view-dashboard.svg"
+          alt="view-dashboard"
+          class="option-icon"
+        />
+        <div class="logo-text">Dashboard</div>
+      </div>
+      <div class="option-container">
+        <img src="home.svg" alt="home-icon" class="option-icon" />
+        <div class="option-label">Home</div>
+      </div>
+      <div class="option-container">
+        <img
+          src="card-account-details.svg"
+          alt="profile-icon"
+          class="option-icon"
+        />
+        <div class="option-label">Profile</div>
+      </div>
+      <div class="option-container">
+        <img src="message.svg" alt="message-icon" class="option-icon" />
+        <div class="option-label">Messages</div>
+      </div>
+      <div class="option-container">
+        <img src="clock-time-four.svg" alt="time-icon" class="option-icon" />
+        <div class="option-label">History</div>
+      </div>
+      <div class="option-container">
+        <img src="text-box-multiple.svg" alt="tasks-icon" class="option-icon" />
+        <div class="option-label">Tasks</div>
+      </div>
+      <div class="option-container">
+        <img
+          src="account-group.svg"
+          alt="communities-icon"
+          class="option-icon communities-div"
+        />
+        <div class="option-label">Communities</div>
+      </div>
+      <div class="option-container">
+        <img src="cog.svg" alt="setting-icon" class="option-icon" />
+        <div class="option-label">Settings</div>
+      </div>
+      <div class="option-container">
+        <img src="help-box.svg" alt="support-icon" class="option-icon" />
+        <div class="option-label">Support</div>
+      </div>
+      <div class="option-container">
+        <img src="security.svg" alt="privacy-icon" class="option-icon" />
+        <div class="option-label">Privacy</div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="searchbar-div">
+        <img src="magnify.svg" alt="" class="search-icon searchbar-icon" />
+        <form action="" method="get" class="searchbar-form">
+          <input type="text" id="searchbar-input" />
+        </form>
+      </div>
+      <div class="rightend-stuff">
+        <img src="bell-outline.svg" alt="search-icon" class="searchbar-icon" />
+        <img src="" alt="" />
+        <div class="rightend-name">Faizan</div>
+      </div>
+      <div class="introinfo-div">
+        <img src="" alt="" class="intro-img" />
+        <div class="intro-hello-text">Hi there,</div>
+        <div class="intro-name-text">Faizan</div>
+      </div>
+      <div class="rightend-btns">
+        <div class="rightendbtn-div">
+          <button class="new-btn">New</button>
+        </div>
+        <div class="rightendbtn-div">
+          <button class="upload-btn">Upload</button>
+        </div>
+        <div class="rightendbtn-div">
+          <button class="share-btn">Share</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="projects-container">
+        <div class="content-sec-heading">
+          <p>Your Projects</p>
+        </div>
+        <div class="projects-div">
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+          <div class="project-card"></div>
+        </div>
+      </div>
+      <div class="announcement-container">
+        <div class="content-sec-heading">
+          <p>Announcements</p>
+        </div>
+        <div class="announcement-card"></div>
+        <div class="announcement-card"></div>
+        <div class="announcement-card"></div>
+      </div>
+      <div class="trending-container">
+        <div class="content-sec-heading">
+          <p>Trending</p>
+        </div>
+        <div class="trending-card"></div>
+        <div class="trending-card"></div>
+        <div class="trending-card"></div>
+        <div class="trending-card"></div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,157 @@
+.roboto-newfont {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 3.5fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: ghostwhite;
+    padding: 20px;
+    margin-bottom: 250px;
+    display: grid;
+    grid-template-rows: 1fr repeat(9, 0.6fr);
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.option-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.option-container>img {
+    height: 26px;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: antiquewhite;
+
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 10px 40px 10px 40px;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 15px;
+    padding: 2em 2em 4em 1.8em;
+}
+
+.main-content .project-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.main-content .announcement-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.main-content .trending-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.content-sec-heading {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.searchbar-div {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-icon {
+    height: 1em;
+}
+
+.searchbar-form {
+    flex: 1 1 90%;
+}
+
+#searchar-input {
+    width: 100%;
+}
+
+.rightend-stuff {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar-icon {
+    height: 1em;
+}
+
+.introinfo-div {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.rightend-btns {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rightendbtn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightendbtn-div button {
+    height: 2em;
+    border-radius: 15px;
+    padding: 4px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
