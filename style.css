@@ -152,11 +152,11 @@ body {
 
 .intro-name-text {
     font-weight: 500;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .intro-img {
-    height: 5.5em;
+    height: 5.2em;
 }
 
 .rightend-btns {
@@ -190,10 +190,35 @@ body {
 }
 
 .project-card {
+    /*min-height: 300px;*/
     background-color: whitesmoke;
-    border: 0.5px solid white;
     border-radius: 6px;
+    padding: 32px 20px 25px 20px;
+    border-left: 8px solid rgb(255, 196, 0);
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
 
+.project-card-heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.project-card-text {
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.project-card-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.project-card-icons>img {
+    height: 1.6em;
 }
 
 .announcement-div {
@@ -201,13 +226,27 @@ body {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    border: 0.5px solid white;
+    padding: 34px 25px;
     border-radius: 6px;
+    gap: 12px;
 }
 
 .announcement-card {
     flex: 1 1 100%;
+}
+
+.announcement-card .first-child {
+    border-bottom: 1px solid darkgray;
+}
+
+.announcement-card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.announcement-card-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.534);
 }
 
 .trending-div {
@@ -222,4 +261,33 @@ body {
 
 .trending-card {
     flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 10px;
+}
+
+.trending-card-label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trending-card-img {
+    display: flex;
+    align-items: center;
+}
+
+.trending-card-img>img {
+    size: 2.4em;
+}
+
+.trending-card-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.trending-card-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.534);
 }
